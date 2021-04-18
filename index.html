@@ -11,10 +11,10 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
-                <img src="assets/img/logo.png" alt="" class="logo">
+                <img src="assets/img/logo.png" alt="" class="logo header__logo">
                 <nav class="nav">
                     <a href="" class="nav__link">Информация</a>
                     <a href="" class="nav__link">О приложении</a>
@@ -145,16 +145,34 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
-                <img src="assets/img/logo.png" alt="" class="logo">
+                <img src="assets/img/logo.png" alt="" class="logo footer__logo">
                 <nav class="footer__nav">
-                    <a href="" class="footer__nav-link"></a>
-                    <a href="" class="footer__nav-link"></a>
-                    <a href="" class="footer__nav-link"></a>
-                    <a href="" class="footer__nav-link"></a>
-                    <a href="" class="footer__nav-link"></a>
+                    <a href="" class="footer__nav-link">Информация</a>
+                    <a href="" class="footer__nav-link">Приложение</a>
+                    <a href="" class="footer__nav-link">Как это работает</a>
+                    <a href="" class="footer__nav-link footer__nav-link--grey">Политика конфиденциальности</a>
+                    <a href="" class="footer__nav-link footer__nav-link--grey">Договор оферты</a>
                 </nav>
-                <div class="footer__contact"></div>
-                <a href="" class="footer__link"></a>
+                <div class="footer__contact">
+                    <a class="footer__contact-link" href="tel:">
+                        <img src="assets/img/tel.svg" alt="" class="footer__img">
+                        +7 918 284 38 45
+                    </a>
+                    <a class="footer__contact-link" href="mailto:">
+                        <img src="assets/img/email.svg" alt="" class="footer__img">
+                        support@denischernakov.ru
+                    </a>
+                    <div class="footer__contact-text">
+                        ИП ЧЕРНАКОВ ДЕНИС ВЯЧЕСЛАВОВИЧ ИНН: 780245116203. ОГРН: 31178473140006. Тел. +7 999 528 34 56. E-mail: denischernakov@gmail.com. 194156, г. Санкт-Петербург, р-н. Выборгский, ул. Манчестерская д. 10, Корп. 2, лит. А, кв. 165 
+                        <br>
+                        <br>
+                        ©2020
+                    </div>
+                </div>
+                <a href="#header" class="footer__link">
+                    <img src="assets/img/arrow.svg" alt="" class="footer__link-img">
+                    Наверх
+                </a>
             </div>
         </div>
     </footer>
