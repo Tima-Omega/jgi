@@ -1,0 +1,26 @@
+$red: #9B1A48;
+$dark: #6D5555;
+$bronze: #CFA146;
+$grey: #9E9E9E;
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    color: #000;
+    font-size: 16px;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}  
+
+.container {
+    max-width: 1211px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 31px 0;
+}

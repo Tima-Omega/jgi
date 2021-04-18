@@ -1,0 +1,23 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  color: #000;
+  font-size: 16px;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1211px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 31px 0;
+}
+/*# sourceMappingURL=style.css.map */
