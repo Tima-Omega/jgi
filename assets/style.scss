@@ -3,11 +3,21 @@ $dark: #6D5555;
 $bronze: #CFA146;
 $grey: #9E9E9E;
 
+@mixin mask-contain-center {
+    mask-repeat: no-repeat !important;
+    -webkit-mask-repeat: no-repeat !important;
+    mask-position: center center !important;
+    -webkit-mask-position: center center !important;
+    mask-size: contain !important;
+    -webkit-mask-size: contain !important;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     color: #000;
     font-size: 16px;
+    line-height: 1.4;
 }
 
 *, *::after, *::before {
@@ -15,7 +25,7 @@ body {
 }  
 
 .container {
-    max-width: 1211px;
+    max-width: 1251px;
     width: 100%;
     padding: 0 20px;
     margin: 0 auto;
@@ -23,4 +33,202 @@ body {
 
 .header {
     padding: 31px 0;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.nav {
+    &__link {
+        font-weight: 400;
+        line-height: 1.4;
+        margin-right: 44px;
+        text-decoration: none;
+        color: #000;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.block {
+    margin-bottom: 167px;
+    &__inner {
+        display: grid;
+        grid-template-columns: 262px 1fr;
+        gap: 0 20px;
+    }
+    &__profile {
+        box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
+        border-radius: 16px;
+        padding: 16px;
+        margin-bottom: 16px;
+    }
+    &__head {
+        display: flex;
+        font-weight: 400;
+        font-size: 14px;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    &__img {
+        margin-right: 16px;
+    }
+    &__info {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    &__info-item {
+        border: 1px solid #9B1A48;
+        border-radius: 1000px;
+        padding: 4px 8px;
+        margin-right: 4px;
+        font-weight: 700;
+        font-size: 10px;
+        color: $red;
+        text-transform: uppercase;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__info-more {
+        width: 24px;
+        height: 24px;
+        margin-left: auto;
+        mask: url(../assets/img/info-more.svg);
+        @include mask-contain-center;
+        background: $red;
+    }
+    &__achiev {
+        display: flex;
+    }
+    &__icon {
+        width: 28px;
+        height: 28px;
+        margin-right: 16px;
+        transition: .3s linear;
+        &--mr {
+            margin-right: 12px;
+            width: 24px;
+            height: 24px;
+        }
+        &--content {
+            margin-right: 10px;
+        }
+        &--chat {
+            background: url(../assets/img/icon-chat.svg) center /cover no-repeat;
+            &:hover {
+                background: url(../assets/img/icon-chat-hov.svg) center /cover no-repeat;
+            }
+        }
+        &--shop {
+            background: url(../assets/img/icon-shop.svg) center /cover no-repeat;
+            &:hover {
+                background: url(../assets/img/icon-shop-hov.svg) center /cover no-repeat;
+            }
+        }
+        &--achiev {
+            background: url(../assets/img/icon-achiev.svg) center /cover no-repeat;
+            &:hover {
+                background: url(../assets/img/icon-achiev-hov.svg) center /cover no-repeat;
+            }
+        }
+        &--prize {
+            background: url(../assets/img/icon-prize.svg) center /cover no-repeat;
+            &:hover {
+                background: url(../assets/img/icon-prize-hov.svg) center /cover no-repeat;
+            }
+        }
+        &--more {
+            background: url(../assets/img/icon-more.svg) center /cover no-repeat;
+            &:hover {
+                background: url(../assets/img/icon-more-hov.svg) center /cover no-repeat;
+            }
+        }
+        &--task {
+            background: url(../assets/img/icon-task.svg) center /cover no-repeat;
+            &:hover {
+                background: url(../assets/img/icon-task-hov.svg) center /cover no-repeat;
+            }
+        }
+        &--friend {
+            background: url(../assets/img/icon-friend.svg) center /cover no-repeat;
+            &:hover {
+                background: url(../assets/img/icon-friend-hov.svg) center /cover no-repeat;
+            }
+        }
+        &--list {
+            background: url(../assets/img/icon-list.svg) center /cover no-repeat;
+            &:hover {
+                background: url(../assets/img/icon-list-hov.svg) center /cover no-repeat;
+            }
+        }
+        &--add {
+            background: url(../assets/img/icon-add.svg) center /cover no-repeat;
+            &:hover {
+                background: url(../assets/img/icon-add-hov.svg) center /cover no-repeat;
+            }
+        }
+        
+    }
+    &__list {
+        box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
+        border-radius: 16px;
+        padding-left: 16px;
+    }
+    &__list-item {
+        padding: 16px 0 17px 0;
+        border-bottom: 1px solid #EEEEEE;
+    }
+    &__list-link {
+        color: $dark;
+        font-weight: 500;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        transition: .2s linear;
+
+        &:hover {
+            color: $red;
+        }
+    }
+    &__content {
+        box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
+        border-radius: 20px;
+        min-height: 592px;
+        align-items: flex-start;
+    }
+    &__item {
+        padding: 24px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    &__name {
+        display: flex;
+        align-items: center;
+        max-width: 204px;
+        width: 100%;
+        background: #F8F8F8;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 4px 7px;
+        font-size: 14px;
+        line-height: 1;
+        font-weight: 500;
+        color: $dark;
+        margin-bottom: 16px;
+    }
+    &__desc {
+        display: flex;
+    }
+    &__desc-link {
+        font-weight: 500;
+        color: $bronze;
+        margin-right: 10px;
+        &:last-child {
+            margin-right: 0;
+            margin-left: 10px;
+        }
+    }
 }

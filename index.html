@@ -6,19 +6,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Istok+Web:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/normalize.css">
     <link rel="stylesheet" href="assets/style.css">
     <title>Document</title>
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <img src="assets/img/logo.png" alt="" class="header__logo">
-            <nav class="nav">
-                <a href="" class="nav__link"></a>
-                <a href="" class="nav__link"></a>
-                <a href="" class="nav__link"></a>
-            </nav>
+            <div class="header__inner">
+                <img src="assets/img/logo.png" alt="" class="logo">
+                <nav class="nav">
+                    <a href="" class="nav__link">Информация</a>
+                    <a href="" class="nav__link">О приложении</a>
+                    <a href="" class="nav__link">Как это работает</a>
+                </nav>
+            </div>
         </div>
     </header>
+    <div class="block">
+        <div class="container">
+            <div class="block__inner">
+                <aside class="block__aside">
+                    <div class="block__profile">
+                        <div class="block__head">
+                            <img src="assets/img/user.png" alt="" class="block__img">
+                            Апполионарий Константинопольский
+                        </div>
+                        <div class="block__info">
+                            <div class="block__info-item">азарт</div>
+                            <div class="block__info-item">4 уровень</div>
+                            <button class="block__info-more"></button>
+                        </div>
+                        <div class="block__achiev">
+                            <div class="block__icon block__icon--chat"></div>
+                            <div class="block__icon block__icon--shop"></div>
+                            <div class="block__icon block__icon--achiev"></div>
+                        </div>
+                    </div>
+                    <div class="block__list">
+                        <div class="block__list-item">
+                            <a href="" class="block__list-link">
+                                <div class="block__icon block__icon--mr block__icon--list"></div>
+                                Лента
+                            </a>
+                        </div><div class="block__list-item">
+                            <a href="" class="block__list-link">
+                                <div class="block__icon block__icon--mr block__icon--chat"></div>
+                                Чаты
+                            </a>
+                        </div>
+                        <div class="block__list-item">
+                            <a href="" class="block__list-link">
+                                <div class="block__icon block__icon--mr block__icon--friend"></div>
+                                Друзья
+                            </a>
+                        </div>
+                        <div class="block__list-item">
+                            <a href="" class="block__list-link">
+                                <div class="block__icon block__icon--mr block__icon--task"></div>
+                                Задания
+                            </a>
+                        </div>
+                        <div class="block__list-item">
+                            <a href="" class="block__list-link">
+                                <div class="block__icon block__icon--mr block__icon--achiev"></div>
+                                Достижения
+                            </a>
+                        </div>
+                        <div class="block__list-item">
+                            <a href="" class="block__list-link">
+                                <div class="block__icon block__icon--mr block__icon--shop"></div>
+                                Магазин
+                            </a>
+                        </div>
+                        <div class="block__list-item">
+                            <a href="" class="block__list-link">
+                                <div class="block__icon block__icon--mr block__icon--prize"></div>
+                                Розыгрыши
+                            </a>
+                        </div>
+                        <div class="block__list-item">
+                            <a href="" class="block__list-link">
+                                <div class="block__icon block__icon--mr block__icon--more"></div>
+                                Еще
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+                <div class="block__content">
+                    <div class="block__item">
+                        <div class="block__name">
+                            <div class="block__icon block__icon--mr block__icon--content block__icon--prize"></div>
+                            Результат розыгрыша
+                        </div>
+                        <div class="block__desc">
+                            <a href="" class="block__desc-link">Андрей Петров</a>
+                            подружился с пользователем
+                            <a href="" class="block__desc-link">Игорь Крутых</a>
+                        </div>
+                    </div>
+                    <div class="block__item">
+                        <div class="block__name">
+                            <div class="block__icon block__icon--mr block__icon--content block__icon--add"></div>
+                            Добавление в друзья
+                        </div>
+                        <div class="block__desc">
+                            <a href="" class="block__desc-link">Андрей Петров</a>
+                            подружился с пользователем
+                            <a href="" class="block__desc-link">Игорь Крутых</a>
+                        </div>
+                    </div>
+                    <div class="block__item">
+                        <div class="block__name">
+                            <div class="block__icon block__icon--mr block__icon--content block__icon--add"></div>
+                            Добавление в друзья
+                        </div>
+                        <div class="block__desc">
+                            <a href="" class="block__desc-link">Андрей Петров</a>
+                            подружился с пользователем
+                            <a href="" class="block__desc-link">Игорь Крутых</a>
+                        </div>
+                    </div>
+                    <div class="block__item">
+                        <div class="block__name">
+                            <div class="block__icon block__icon--mr block__icon--content block__icon--prize"></div>
+                            Результат розыгрыша
+                        </div>
+                        <div class="block__desc">
+                            <a href="" class="block__desc-link">Андрей Петров</a>
+                            подружился с пользователем
+                            <a href="" class="block__desc-link">Игорь Крутых</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <img src="assets/img/logo.png" alt="" class="logo">
+                <nav class="footer__nav">
+                    <a href="" class="footer__nav-link"></a>
+                    <a href="" class="footer__nav-link"></a>
+                    <a href="" class="footer__nav-link"></a>
+                    <a href="" class="footer__nav-link"></a>
+                    <a href="" class="footer__nav-link"></a>
+                </nav>
+                <div class="footer__contact"></div>
+                <a href="" class="footer__link"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
