@@ -60,6 +60,9 @@ body {
   -ms-grid-columns: 262px 1fr;
       grid-template-columns: 262px 1fr;
   gap: 0 20px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .block__profile {
@@ -246,7 +249,39 @@ body {
 }
 
 .block__list-link:hover {
-  color: #9B1A48;
+  color: #BF255C;
+}
+
+.block__list-link:hover .block__icon--list {
+  background: url(../assets/img/icon-list-hov.svg) center/cover no-repeat;
+}
+
+.block__list-link:hover .block__icon--chat {
+  background: url(../assets/img/icon-chat-hov.svg) center/cover no-repeat;
+}
+
+.block__list-link:hover .block__icon--friend {
+  background: url(../assets/img/icon-friend-hov.svg) center/cover no-repeat;
+}
+
+.block__list-link:hover .block__icon--task {
+  background: url(../assets/img/icon-task-hov.svg) center/cover no-repeat;
+}
+
+.block__list-link:hover .block__icon--achiev {
+  background: url(../assets/img/icon-achiev-hov.svg) center/cover no-repeat;
+}
+
+.block__list-link:hover .block__icon--shop {
+  background: url(../assets/img/icon-shop-hov.svg) center/cover no-repeat;
+}
+
+.block__list-link:hover .block__icon--prize {
+  background: url(../assets/img/icon-prize-hov.svg) center/cover no-repeat;
+}
+
+.block__list-link:hover .block__icon--more {
+  background: url(../assets/img/icon-more-hov.svg) center/cover no-repeat;
 }
 
 .block__content {
@@ -254,14 +289,22 @@ body {
           box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
   border-radius: 20px;
   min-height: 592px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 
 .block__item {
   padding: 24px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  cursor: pointer;
+}
+
+.block__item:hover {
+  background: #FAFAFA;
+}
+
+.block__item:last-child {
+  border: none;
 }
 
 .block__name {
@@ -316,7 +359,7 @@ body {
 }
 
 .footer__nav {
-  margin: 0 130px 0 97px;
+  margin: 0 127px 0 97px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -354,7 +397,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 92px;
+  margin-right: 88px;
 }
 
 .footer__contact-link {
