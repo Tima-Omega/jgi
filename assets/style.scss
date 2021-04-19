@@ -67,6 +67,9 @@ button {
     &--friends {
         margin-bottom: 52px;
     }
+    &--results {
+        margin-bottom: 118px
+    }
     &__inner {
         display: grid;
         grid-template-columns: 262px 1fr;
@@ -88,6 +91,15 @@ button {
     }
     &__img {
         margin-right: 16px;
+        &--comment {
+            width: 40px;
+            height: 40px;
+            margin-right: 12px;
+        }
+        &--small {
+            width: 32px;
+            height: 32px;
+        }
     }
     &__info {
         display: flex;
@@ -233,6 +245,10 @@ button {
             padding: 24px;
             min-height: 688px;
         }
+        &--results {
+            padding: 24px;
+            min-height: initial;
+        }
     }
     &__item {
         padding: 24px;
@@ -260,6 +276,10 @@ button {
         font-weight: 500;
         color: $dark;
         margin-bottom: 16px;
+        &--results {
+            margin-left: 16px;
+            margin-bottom: 0;
+        }
     }
     &__desc {
         display: flex;
@@ -297,6 +317,149 @@ button {
     }
     &__rank-desc {
         font-size: 14px;
+    }
+    &__post {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #BDBDBD;
+    }
+    &__post-head {
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+    &__post-btn {
+        background: url(../assets/img/post-arrow.svg) center /cover no-repeat;
+        width: 18px;
+        height: 18px;
+    }
+    &__author {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    &__author-link {
+        display: block;
+        margin-bottom: 4px;
+        font-weight: 500;
+        color: $bronze;
+        font-size: 18px;
+    }
+    &__author-date {
+        font-size: 14px;
+        color: #9F9F9F;
+    }
+    &__post-title {
+        margin-bottom: 20px;
+    }
+    &__post-img {
+        margin-bottom: 20px;
+    }
+    &__actions {
+        display: flex;
+        align-items: center;
+    }
+    &__action {
+        width: 24px;
+        height: 24px;
+        outline: none;
+        transition: .2s linear;
+        &--big {
+            width: 48px;
+            height: 48px;
+        }
+        &--medium {
+            width: 32px;
+            height: 32px;
+        }
+        &--like {
+            background: url(../assets/img/like.svg) center /cover no-repeat;
+            margin-right: 24px;
+            &:active {
+                background: url(../assets/img/like-active.svg) center /cover no-repeat;
+            }
+        }
+        &--share {
+            background: url(../assets/img/share.svg) center /cover no-repeat;
+        }
+        &--close {
+            background: url(../assets/img/close.svg) center /cover no-repeat;
+            margin: 0 12px;
+        }
+        &--send {
+            background: url(../assets/img/send.svg) center /cover no-repeat;
+        }
+        &--add {
+            background: url(../assets/img/add.svg) center /cover no-repeat;
+            margin: 0 12px;
+        }
+    }
+    &__comments {
+        padding-top: 20px;
+    }
+    &__comments-title {
+        color: #9F9F9F;
+        margin-bottom: 20px;
+    }
+    &__comment {
+        display: flex;
+        margin-bottom: 25px;
+        &--answer {
+            margin-left: 52px;
+        }
+        &--mb {
+            margin-bottom: 36px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__comment-name {
+        color: #202C3F;
+        font-weight: 500;
+        margin-bottom: 3px;
+    }
+    &__comment-text {
+        color: #202C3F;
+        margin-bottom: 12px;
+        &--user {
+            color: #202C3F;
+        }
+    }
+    &__comment-box {
+        display: flex;
+        align-items: center;
+    }
+    &__comment-date {
+        color: #BBC3D0;
+        font-size: 14px;
+        margin-right: 22px;
+    }
+    &__comment-answer {
+        color: $bronze;
+        font-size: 14px;
+    }
+    &__input {
+        width: 100%;
+        border-radius: 100px;
+        border: 1px solid #BDBDBD;
+        outline: none;
+        resize: none;
+        padding: 9px 16px;
+        &::placeholder {
+            font-size: 14px;
+            color: $grey;
+        }
+        &--big {
+            padding: 12px 16px;
+            &::placeholder {
+                font-size: 16px;
+            }
+        }
+    }
+    &__comments-more {
+        display: block;
+        color: $bronze;
+        margin-left: 52px;
+        margin-bottom: 41px;
     }
 }
 
@@ -368,3 +531,5 @@ button {
         margin-right: 8px;
     }
 }
+
+
