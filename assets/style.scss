@@ -461,6 +461,57 @@ button {
         margin-left: 52px;
         margin-bottom: 41px;
     }
+    &__title {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 24px;
+    }
+}
+
+.profile {
+    &__head {
+        display: flex;
+        margin-bottom: 32px;
+    }
+    &__photo {
+        position: relative;
+        border-radius: 50%;
+        background: #000;
+        margin-right: 24px;
+    }
+    &__img {
+        display: block;
+        object-fit: cover;
+        opacity: 0.5;
+    }
+    &__head-inner {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        align-items: center;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.2;
+        color: #fff;
+    }
+    &__head-img {
+        height: 30px;
+        width: 30px;
+    }
+    &__head-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px 24px;
+    }
 }
 
 .logo {

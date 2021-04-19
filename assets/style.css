@@ -640,6 +640,82 @@ button {
   margin-bottom: 41px;
 }
 
+.block__title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.profile__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.profile__photo {
+  position: relative;
+  border-radius: 50%;
+  background: #000;
+  margin-right: 24px;
+}
+
+.profile__img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.5;
+}
+
+.profile__head-inner {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.profile__head-img {
+  height: 30px;
+  width: 30px;
+}
+
+.profile__head-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 24px 24px;
+}
+
 .logo {
   width: 185px;
   height: 40px;
