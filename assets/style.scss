@@ -27,6 +27,7 @@ button {
     border: none;
     cursor: pointer;
     background: transparent;
+    outline: none;
 }
 
 *, *::after, *::before {
@@ -485,11 +486,18 @@ button {
         border-radius: 50%;
         background: #000;
         margin-right: 24px;
+        transition: .2s linear;
+        &:hover .profile__img {
+            opacity: 0.6;
+        }
+        &:hover .profile__head-inner {
+            opacity: 1;
+        }
     }
     &__img {
         display: block;
         object-fit: cover;
-        opacity: 0.5;
+        transition: .2s linear;
     }
     &__head-inner {
         position: absolute;
@@ -504,6 +512,9 @@ button {
         font-weight: 500;
         line-height: 1.2;
         color: #fff;
+        opacity: 0;
+        transition: .2s linear;
+        cursor: pointer;
     }
     &__head-img {
         height: 30px;
