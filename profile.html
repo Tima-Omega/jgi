@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Istok+Web:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/normalize.css">
     <link rel="stylesheet" href="assets/style.css">
     <title>Document</title>
@@ -105,7 +106,7 @@
                                 </div>
                             </div>
                             <div class="profile__head-box">
-                                <div class="block__info">
+                                <div class="block__info block__info--profile">
                                     <div class="block__info-item">азарт</div>
                                     <div class="block__info-item">4 уровень</div>
                                 </div>
@@ -119,7 +120,52 @@
                         <div class="profile__inner">
                             <form action="" class="profile__form">
                                 <div class="profile__grid">
-                                    
+                                    <div class="profile__item">
+                                        <div class="profile__name">Имя:</div>
+                                        <input type="text" class="profile__input">
+                                    </div>
+                                    <div class="profile__item">
+                                        <div class="profile__name">Фамилия:</div>
+                                        <input type="text" class="profile__input">
+                                    </div>
+                                    <div class="profile__item">
+                                        <div class="profile__name">Страна:</div>
+                                        <input type="text" class="profile__input">
+                                    </div>
+                                    <div class="profile__item">
+                                        <div class="profile__name">Город:</div>
+                                        <div class="select__wrapper">
+                                            <select class="profile__select" name="" id="">
+                                                <option value="Выберите город..."></option>
+                                                <option value="">Санкт-Петербург</option>
+                                                <option value="">Москва</option>
+                                                <option value="">Самара</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="profile__item">
+                                        <div class="profile__name">Дата рождения:</div>
+                                        <input type="text" class="profile__input">
+                                    </div>
+                                    <div class="profile__item">
+                                        <div class="profile__name">Пол</div>
+                                        <div class="profile__radios">
+                                            <div class="radio">
+                                                <input class="radio__input" type="radio" name="sex" id="">
+                                                <div class="radio__circle"></div>
+                                                <div class="radio__text">M</div>
+                                            </div>
+                                            <div class="radio">
+                                                <input class="radio__input" type="radio" name="sex" id="">
+                                                <div class="radio__circle"></div>
+                                                <div class="radio__text">Ж</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="profile__item profile__item--big">
+                                        <div class="profile__name">О себе:</div>
+                                        <textarea class="profile__textarea" name="" id="" cols="30" rows="5" placeholder="Напишите о себе..."></textarea>
+                                    </div>
                                 </div>
                             </form>
                         </div>
@@ -163,4 +209,7 @@
         </div>
     </footer>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="js/main.js"></script>
 </html>
