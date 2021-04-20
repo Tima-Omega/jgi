@@ -7,3 +7,9 @@ $(document).ready(function() {
         }
     });
 });
+
+$(document).ready(function() {
+    $(".profile__select--sphere").select2({
+        minimumResultsForSearch: Infinity,
+    });
+});

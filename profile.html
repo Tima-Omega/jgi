@@ -24,7 +24,7 @@
             </div>
         </div>
     </header>
-    <div class="block">
+    <div class="block block--profile">
         <div class="container">
             <div class="block__inner">
                 <aside class="block__aside">
@@ -134,7 +134,7 @@
                                     </div>
                                     <div class="profile__item">
                                         <div class="profile__name">Город:</div>
-                                        <div class="select__wrapper">
+                                        <div class="profile__select-wrapper">
                                             <select class="profile__select" name="" id="">
                                                 <option value="Выберите город..."></option>
                                                 <option value="">Санкт-Петербург</option>
@@ -147,8 +147,8 @@
                                         <div class="profile__name">Дата рождения:</div>
                                         <input type="text" class="profile__input">
                                     </div>
-                                    <div class="profile__item">
-                                        <div class="profile__name">Пол</div>
+                                    <div class="profile__item  profile__item--ml">
+                                        <div class="profile__name profile__name--mb">Пол</div>
                                         <div class="profile__radios">
                                             <div class="radio">
                                                 <input class="radio__input" type="radio" name="sex" id="">
@@ -164,10 +164,43 @@
                                     </div>
                                     <div class="profile__item profile__item--big">
                                         <div class="profile__name">О себе:</div>
-                                        <textarea class="profile__textarea" name="" id="" cols="30" rows="5" placeholder="Напишите о себе..."></textarea>
+                                        <textarea class="profile__textarea" name="" id="" cols="30" rows="4" placeholder="Напишите о себе..."></textarea>
+                                    </div>
+                                    <div class="profile__item">
+                                        <div class="profile__name">Сфера:</div>
+                                        <div class="profile__select-wrapper">
+                                            <select class="profile__select profile__select--sphere" name="" id="">
+                                                <option value="">Отношения</option>
+                                                <option value="">Деньни</option>
+                                                <option value="">Полнота жизна</option>
+                                                <option value="">Саморазвитие</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="profile__item">
+                                    </div>
+                                    <div class="profile__item">
+                                        <div class="profile__name">Эл. почта:</div>
+                                        <input type="text" class="profile__input">
+                                    </div>
+                                    <div class="profile__item">
+                                        <div class="profile__name">Телефон:</div>
+                                        <input type="text" class="profile__input">
                                     </div>
                                 </div>
+                                <button class="profile__btn">Подтвердить эл. почту</button>
                             </form>
+                        </div>
+                        <div class="profile__cards">
+                            <div class="profile__cards-head">
+                                <div class="profile__cards-title">Сохраненные карты</div>
+                                <button class="profile__cards-add">
+                                    Добавить карту
+                                    <img src="assets/img/add-card.svg" alt="" class="profile__cards-add-img">
+                                </button>
+                            </div>
+                            <div class="profile__cards-empty">Нет сохраненных карт</div>
+                            <button class="profile__cards-btn">Сохранить изменения</button>
                         </div>
                     </div>
                 </div>
