@@ -249,6 +249,7 @@ button {
         box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
         border-radius: 20px;
         min-height: 592px;
+        overflow: hidden;
         &--achievement {
             padding: 24px;
             min-height: 688px;
@@ -660,6 +661,68 @@ button {
     }
     &__text {
         margin-left: 8px;
+    }
+}
+
+.chat {
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px;
+        box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
+    }
+    &__icon {
+        margin-right: 10px;
+        opacity: 0.5;
+    }
+    &__search {
+        display: flex;
+        align-items: center;
+    }
+    &__input {
+        border: none;
+        outline: none;
+    }
+    &__new {
+        display: flex;
+        color: $red;
+        text-decoration: none;
+    }
+    &__new-img {
+        margin-right: 14px;
+    }
+    &__inner {
+        padding: 20px 24px 24px 24px;
+    }
+    &__item {
+        padding-bottom: 16px;
+        margin-bottom: 28px;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    &__cont {
+        display: flex;
+    }
+    &__name {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    &__text {
+        color: $grey;
+    }
+    &__time {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        line-height: 1;
+        align-items: flex-end;
+        color: $grey;
+        img {
+            width: 24px;
+            height: 24px;
+            margin-top: 6px;
+        }
     }
 }
 
