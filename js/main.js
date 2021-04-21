@@ -30,3 +30,16 @@ $(document).ready(function() {
     $(".mask-phone").mask("+9 (999) 999-99-99");
 });
 
+$(function() {
+    var tab = $('.chat__tab-inner > div'); 
+    tab.hide().filter(':first').show(); 
+    
+    $('.chat__tab-link').click(function(){
+        tab.hide(); 
+        tab.filter(this.hash).show(); 
+        $('.chat__tab-link').removeClass('active');
+        $(this).addClass('active');
+        return false;
+    }).filter(':first').click();
+});
+
