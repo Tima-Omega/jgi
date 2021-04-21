@@ -74,6 +74,9 @@ button {
     &--profile {
         margin-bottom: 136px;
     }
+    &--dialog {
+        margin-bottom: 85px;
+    }
     &__inner {
         display: grid;
         grid-template-columns: 262px 1fr;
@@ -526,9 +529,6 @@ button {
         flex-direction: column;
         justify-content: center;
     }
-    &__inner {
-        border-bottom: 1px solid #BDBDBD;
-    }
     &__grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -581,7 +581,17 @@ button {
         padding: 0;
     }
     &__cards {
-        margin-top: 20px;
+        padding-top: 20px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: calc(100% + 25px);
+            height: 1px;
+            background: #BDBDBD;
+            top: 0;
+            right: -25px;
+        }
     }
     &__cards-head {
         display: flex;
@@ -604,7 +614,6 @@ button {
     }
     &__cards-empty {
         color: $grey;
-        margin-bottom: 56px;
     }
     &__cards-btn {
         display: block;
@@ -616,6 +625,41 @@ button {
         font-weight: 600;
         color: #fff;
         margin: 0 auto;
+        margin-top: 56px;
+    }
+    &__cards-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            width: calc(100% + 25px);
+            height: 1px;
+            background: #BDBDBD;
+            bottom: 0;
+            right: -25px;
+        }
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+    }
+    &__cards-card {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        padding: 16px 0;
+    }
+    &__cards-img {
+        margin-right: 32px;
+    }
+    &__cards-delete {
+        background: url(../assets/img/delete.svg);
+        width: 24px;
+        height: 24px;
     }
 }
 
@@ -739,6 +783,99 @@ button {
         font-size: 12px;
         margin-top: 6px;
     }
+}
+
+.dialog {
+    background: #F8F8F8;
+    &__top {
+        display: flex;
+        align-items: center;
+        padding: 25px 25px 17px;
+        box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
+        background: #fff;
+    }
+    &__user {
+        display: flex;
+        margin-left: 19px;
+    }
+    &__btn {
+        font-weight: 500;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin-bottom: 8px;
+    }
+    &__btn-icon {
+        margin-left: 9px;
+    }
+    &__stat {
+        font-weight: 500;
+        font-size: 14px;
+        color: $red;
+    }
+    &__stat-icon {
+        margin-right: 6px;
+    }
+    &__inner {
+        padding: 0 24px 117px;
+    }
+    &__date {
+        margin: 23px 0;
+        color: $grey;
+        text-align: center;
+    }
+    &__item {
+        padding: 15px;
+        max-width: 436px;
+        background: #fff;
+        box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
+        border-radius: 0px 14px 14px 14px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
+        &--right {
+            margin-left: auto;
+            border-radius: 14px 0px 14px 14px;
+        }
+    }
+    &__item-info {
+        display: flex;
+        align-self: flex-end;
+        margin-top: 5px;
+    }
+    &__item-count {
+        color: #EF143B;
+        font-size: 14px;
+        line-height: 16px;
+        margin-right: 6px;
+    }
+    &__item-like {
+        width: 16px;
+        height: 16px;
+        margin-right: 12px;
+    }
+    &__item-date {
+        font-size: 14px;
+        line-height: 16px;
+        color: #A9A9A9;
+    }
+    &__bottom {
+        padding: 24px;
+        display: flex;
+        box-shadow: 0px -4px 24px rgba(0, 0, 0, 0.06);
+        background: #fff;
+    }
+    &__add {
+        margin: 0 16px 0 0;
+        padding: 0;
+    }
+    &__send {
+        margin: 0 0 0 16px;
+    }
+    &__input {
+        width: calc(100% - 128px)
+    };
 }
 
 

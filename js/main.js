@@ -28,6 +28,5 @@ $(document).ready(function() {
 
     $(".mask-birth").mask("99 / 99 / 9999").datepicker();
     $(".mask-phone").mask("+9 (999) 999-99-99");
-    // $(".mask-birth");
 });
 
