@@ -6,10 +6,24 @@ $(document).ready(function() {
             text: 'Выберите город...'
         }
     });
-});
-
-$(document).ready(function() {
     $(".profile__select--sphere").select2({
         minimumResultsForSearch: Infinity,
     });
+    (function () {
+
+        const cropElement = document.querySelectorAll('.chat__text'), // выбор элементов 
+              size = 32                                             // кол-во символов 
+              endCharacter = '...';                                  // окончание 
+    
+        cropElement.forEach(el => {
+            let text = el.innerHTML;
+    
+            if (el.innerHTML.length > size) {
+                text = text.substr(0, size);
+                el.innerHTML = text + endCharacter;
+            }
+        });
+    
+    }());
 });
+
