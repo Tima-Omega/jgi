@@ -28,6 +28,7 @@ $(document).ready(function() {
 
     $(".search__btn").click(function(){
         $(".search__filters").slideToggle()
+        $(".search__btn-img").toggleClass('active')
     })
 
     $(".mask-birth").mask("99 / 99 / 9999").datepicker();

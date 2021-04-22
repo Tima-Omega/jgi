@@ -1376,10 +1376,18 @@ button {
   width: 14px;
   height: 14px;
   margin-left: 12px;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.search__btn-img.active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .search__filters {
   margin-top: 30px;
+  display: none;
 }
 
 .search__profile {

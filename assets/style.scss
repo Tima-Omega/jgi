@@ -969,10 +969,14 @@ button {
         width: 14px;
         height: 14px;
         margin-left: 12px;
+        transition: .2s linear;
+        &.active {
+            transform: rotate(180deg);
+        }
     }
     &__filters {
         margin-top: 30px;
-        // display: none;
+        display: none;
     }
     &__profile {
         display: grid;
