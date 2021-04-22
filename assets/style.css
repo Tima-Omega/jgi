@@ -61,7 +61,7 @@ button {
   margin-bottom: 167px;
 }
 
-.block--friends {
+.block--achievement {
   margin-bottom: 52px;
 }
 
@@ -83,6 +83,10 @@ button {
 
 .block--friends-search {
   margin-bottom: 99px;
+}
+
+.block--friend-profile {
+  margin-bottom: 49px;
 }
 
 .block__inner {
@@ -907,6 +911,8 @@ button {
   color: #fff;
   margin: 0 auto;
   margin-top: 56px;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
 }
 
 .profile__cards-btn--search {
@@ -915,6 +921,10 @@ button {
       align-self: flex-end;
   min-width: initial;
   padding: 14px 42px;
+}
+
+.profile__cards-btn:hover {
+  background: #b93d68;
 }
 
 .profile__cards-box {
@@ -1396,6 +1406,277 @@ button {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   gap: 24px 24px;
+}
+
+.friend-profile {
+  padding: 24px;
+}
+
+.friend-profile__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.friend-profile__top-link {
+  font-weight: 500;
+  color: #9B1A48;
+  text-decoration: none;
+}
+
+.friend-profile__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.friend-profile__back {
+  margin-right: 17px;
+}
+
+.friend-profile__name {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.friend-profile__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.friend-profile__info-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.friend-profile__info-img {
+  width: 80px;
+  height: 80px;
+}
+
+.friend-profile__info-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 16px;
+}
+
+.friend-profile__info-name {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.friend-profile__info-ranks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.friend-profile__activity {
+  background: #FFEECE;
+  border-radius: 18px;
+  padding: 16px;
+}
+
+.friend-profile__activity-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.friend-profile__activity-text {
+  font-weight: 500;
+}
+
+.friend-profile__activity-value {
+  font-weight: 500;
+}
+
+.friend-profile__activity-status {
+  min-width: 356px;
+  border: none;
+  background: #fff;
+  height: 8px;
+}
+
+.friend-profile__activity-status > .ui-widget-header {
+  border: none;
+  margin: 0;
+  border-radius: 12px;
+  background: #CFA146;
+}
+
+.friend-profile__text {
+  margin: 18px 0 28px;
+}
+
+.friend-profile__title {
+  padding: 6px 10px;
+  background: #FFEECE;
+  font-size: 14px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.friend-profile__title span {
+  color: #9B1A48;
+  margin-left: 3px;
+}
+
+.friend-profile__friends {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.friend-profile__friends-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 18px;
+}
+
+.friend-profile__friends-item:last-child {
+  margin-right: 0;
+}
+
+.friend-profile__friends-img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+}
+
+.friend-profile__friends-name {
+  font-size: 14px;
+}
+
+.friend-profile__slide {
+  max-width: 148px;
+}
+
+.friend-profile__photo {
+  margin-bottom: 90px;
+}
+
+.friend-profile__photo-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.friend-profile__photo-btns {
+  position: relative;
+}
+
+.friend-profile__photo-next {
+  right: 0;
+  border: 1px solid #E3E3E3;
+  border-radius: 10px;
+  width: 32px;
+  height: 32px;
+}
+
+.friend-profile__photo-next::after {
+  content: "";
+  background: url(../assets/img/arrow-grey.svg) center/cover no-repeat;
+  width: 14px;
+  height: 8px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.friend-profile__photo-next:active::after {
+  background: url(../assets/img/arrow-red.svg) center/cover no-repeat;
+  width: 8px;
+  height: 14px;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.friend-profile__photo-prev {
+  right: 48px;
+  left: auto;
+  border: 1px solid #E3E3E3;
+  border-radius: 10px;
+  width: 32px;
+  height: 32px;
+}
+
+.friend-profile__photo-prev::after {
+  content: "";
+  background: url(../assets/img/arrow-grey.svg) center/cover no-repeat;
+  width: 14px;
+  height: 8px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.friend-profile__photo-prev:active::after {
+  background: url(../assets/img/arrow-red.svg) center/cover no-repeat;
+  width: 8px;
+  height: 14px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.friend-profile__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.friend-profile__btn {
+  margin: 0;
+  min-width: 152px;
+}
+
+.friend-profile__btn--white {
+  background: #fff;
+  font-weight: 500;
+  color: #9E9E9E;
+}
+
+.friend-profile__btn--white:hover {
+  background: #e6e6e6;
 }
 
 .select2-container .select2-selection--single {

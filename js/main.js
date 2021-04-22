@@ -26,6 +26,25 @@ $(document).ready(function() {
     
     }());
 
+    $(function() {
+        var tab = $('.chat__tab-inner > div'); 
+        tab.hide().filter(':first').show(); 
+        
+        $('.chat__tab-link').click(function(){
+            tab.hide(); 
+            tab.filter(this.hash).show(); 
+            $('.chat__tab-link').removeClass('active');
+            $(this).addClass('active');
+            return false;
+        }).filter(':first').click();
+    });
+    
+    $( function() {
+        $( ".friend-profile__activity-status" ).progressbar({
+          value: 80
+        });
+    } );
+
     $(".search__btn").click(function(){
         $(".search__filters").slideToggle()
         $(".search__btn-img").toggleClass('active')
@@ -35,16 +54,17 @@ $(document).ready(function() {
     $(".mask-phone").mask("+9 (999) 999-99-99");
 });
 
-$(function() {
-    var tab = $('.chat__tab-inner > div'); 
-    tab.hide().filter(':first').show(); 
-    
-    $('.chat__tab-link').click(function(){
-        tab.hide(); 
-        tab.filter(this.hash).show(); 
-        $('.chat__tab-link').removeClass('active');
-        $(this).addClass('active');
-        return false;
-    }).filter(':first').click();
+
+
+const swiper = new Swiper('.friend-profile__photo', {
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 16,
+  
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
 });
+
 
