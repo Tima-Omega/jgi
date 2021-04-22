@@ -81,6 +81,10 @@ button {
   margin-bottom: 106px;
 }
 
+.block--friends-search {
+  margin-bottom: 99px;
+}
+
 .block__inner {
   display: -ms-grid;
   display: grid;
@@ -773,6 +777,15 @@ button {
   margin-left: 21px;
 }
 
+.profile__item--search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .profile__name {
   font-weight: 500;
   margin-bottom: 12px;
@@ -894,6 +907,14 @@ button {
   color: #fff;
   margin: 0 auto;
   margin-top: 56px;
+}
+
+.profile__cards-btn--search {
+  margin: 0;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  min-width: initial;
+  padding: 14px 42px;
 }
 
 .profile__cards-box {
@@ -1047,6 +1068,10 @@ button {
   padding: 20px 0 0 24px;
 }
 
+.chat__inner--pt {
+  padding: 24px 0 0 24px;
+}
+
 .chat__item {
   padding: 0 17px 16px 0;
   margin-bottom: 25px;
@@ -1162,6 +1187,13 @@ button {
   color: #9B1A48;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+.chat__results {
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #9E9E9E;
 }
 
 .dialog {
@@ -1296,6 +1328,66 @@ button {
 
 .dialog__input {
   width: calc(100% - 128px);
+}
+
+.search {
+  padding: 24px;
+}
+
+.search__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.search__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search__back {
+  margin-right: 17px;
+}
+
+.search__text {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.search__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  padding: 0;
+}
+
+.search__btn-img {
+  width: 14px;
+  height: 14px;
+  margin-left: 12px;
+}
+
+.search__filters {
+  margin-top: 30px;
+}
+
+.search__profile {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 24px 24px;
 }
 
 .select2-container .select2-selection--single {

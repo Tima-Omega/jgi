@@ -80,6 +80,9 @@ button {
     &--friends {
         margin-bottom: 106px;
     }
+    &--friends-search {
+        margin-bottom: 99px;
+    }
     &__inner {
         display: grid;
         grid-template-columns: 262px 1fr;
@@ -551,6 +554,10 @@ button {
         &--ml {
             margin-left: 21px;
         }
+        &--search {
+            display: flex;
+            justify-content: space-between;
+        }
     }
     &__name {
         font-weight: 500;
@@ -635,6 +642,12 @@ button {
         color: #fff;
         margin: 0 auto;
         margin-top: 56px;
+        &--search {
+            margin: 0;
+            align-self: flex-end;
+            min-width: initial;
+            padding: 14px 42px;
+        }
     }
     &__cards-box {
         display: flex;
@@ -746,6 +759,9 @@ button {
     }
     &__inner {
         padding: 20px 0 0 24px;
+        &--pt {
+            padding: 24px 0 0 24px;
+        }
     }
     &__item {
         padding: 0 17px 16px 0;
@@ -824,6 +840,12 @@ button {
         border-radius: 12px;
         color: $red;
         flex-shrink: 0;
+    }
+    &__results {
+        margin-bottom: 24px;
+        font-weight: 500;
+        font-size: 18px;
+        color: $grey;
     }
 }
 
@@ -916,8 +938,47 @@ button {
         margin: 0 0 0 16px;
     }
     &__input {
-        width: calc(100% - 128px)
-    };
+        width: calc(100% - 128px);
+    }
+}
+
+.search {
+    padding: 24px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__box {
+        display: flex;
+        align-items: center;
+    }
+    &__back {
+        margin-right: 17px;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 20px;
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        padding: 0;
+    }
+    &__btn-img {
+        width: 14px;
+        height: 14px;
+        margin-left: 12px;
+    }
+    &__filters {
+        margin-top: 30px;
+        // display: none;
+    }
+    &__profile {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px 24px;
+    }
 }
 
 

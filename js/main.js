@@ -26,6 +26,10 @@ $(document).ready(function() {
     
     }());
 
+    $(".search__btn").click(function(){
+        $(".search__filters").slideToggle()
+    })
+
     $(".mask-birth").mask("99 / 99 / 9999").datepicker();
     $(".mask-phone").mask("+9 (999) 999-99-99");
 });
