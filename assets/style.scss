@@ -86,6 +86,9 @@ button {
     &--friend-profile {
         margin-bottom: 49px;
     }
+    &--tasks {
+        margin-bottom: 103px;
+    }
     &__inner {
         display: grid;
         grid-template-columns: 262px 1fr;
@@ -275,6 +278,9 @@ button {
         }
         &--initial {
             min-height: initial;
+        }
+        &--tasks {
+            min-height: 688px;
         }
     }
     &__item {
@@ -1177,6 +1183,117 @@ button {
                 background: #e6e6e6;
             }
         }
+    }
+}
+
+.tasks {
+    &__nav {
+        display: flex;
+        padding: 20px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    }
+    &__link {
+        display: flex;
+        padding: 7px 16px 7px 22px;
+        font-weight: 500;
+        font-size: 15px;
+        color: #6D5555;
+        text-decoration: none;
+        margin-right: 17px;
+        align-items: center;
+        &:last-child {
+            margin-right: 0;
+        }
+        &.active {
+            background: rgba(155, 26, 72, 0.05);
+            border: 1px solid rgba(155, 26, 72, 0.2);
+            border-radius: 12px;
+            color: $red;
+            flex-shrink: 0;
+        }
+    }
+    &__link-img {
+        margin-right: 14px;
+        width: 16px;
+        height: 21px;
+        &--tasks {
+            background: url(../assets/img/taksk.svg) center /cover no-repeat;
+        }
+        &--in-progress {
+            background: url(../assets/img/in-progress.svg) center /cover no-repeat;
+        }
+        &--check {
+            background: url(../assets/img/check.svg) center /cover no-repeat;
+            width: 24px;
+            height: 13px;
+        }
+    }
+    &__inner {
+        padding: 19px 24px;
+    }
+    &__title {
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    &__subtitle {
+        font-size: 14px;
+        color: $grey;
+        margin-bottom: 36px;
+    }
+    &__status {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        color: $bronze;
+        margin-bottom: 16px;
+    }
+    &__status-img {
+        margin-right: 10px;
+    }
+    &__cont {
+        display: flex;
+        gap: 0 16px;
+    }
+    &__item {
+        border: 1px solid #BDBDBD;
+        border-radius: 18px;
+        padding: 16px;
+        width: 33%;
+        min-height: 242px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__step {
+        font-size: 14px;
+        color: $grey;
+        margin-bottom: 8px;
+    }
+    &__name {
+        font-weight: 500;
+        margin-bottom: 12px;
+    }
+    &__text {
+        font-size: 14px;
+        color: $grey;
+    }
+    &__reward {
+        display: flex;
+        margin-top: auto;
+    }
+    &__reward-item {
+        display: flex;
+        align-items: center;
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__reward-img {
+        margin-right: 10px;
+    }
+    &__reward-value {
+        font-weight: 500;
+        color: $red;
     }
 }
 
