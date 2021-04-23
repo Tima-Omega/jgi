@@ -93,6 +93,10 @@ button {
   margin-bottom: 103px;
 }
 
+.block--tasks-info {
+  margin-bottom: 77px;
+}
+
 .block__inner {
   display: -ms-grid;
   display: grid;
@@ -1763,6 +1767,24 @@ button {
   margin-bottom: 36px;
 }
 
+.tasks__subtitle--red {
+  color: #D00303;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tasks__subtitle--mb {
+  margin-bottom: 28px;
+}
+
+.tasks__subtitle-img {
+  margin-right: 8px;
+}
+
 .tasks__status {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1809,6 +1831,10 @@ button {
   min-height: 214px;
 }
 
+.tasks__item--padding {
+  padding: 16px 12px;
+}
+
 .tasks__step {
   font-size: 14px;
   color: #9E9E9E;
@@ -1818,6 +1844,20 @@ button {
 .tasks__name {
   font-weight: 500;
   margin-bottom: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tasks__name--ml {
+  margin-left: 8px;
+}
+
+.tasks__name-img {
+  margin-right: 10px;
 }
 
 .tasks__text {
@@ -1853,6 +1893,64 @@ button {
 .tasks__reward-value {
   font-weight: 500;
   color: #9B1A48;
+}
+
+.task {
+  background: #FFDFA3;
+  border-radius: 10px;
+  padding: 8px;
+  margin-bottom: 12px;
+}
+
+.task:last-child {
+  margin-bottom: 0;
+}
+
+.task__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.task__img {
+  margin-right: 8px;
+}
+
+.task__progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.task__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+}
+
+.task__item:last-child {
+  margin-right: 0;
+}
+
+.task__desc {
+  font-size: 12px;
+  color: #5B5B5B;
+  margin-right: 5px;
+}
+
+.task__value {
+  font-size: 12px;
 }
 
 .select2-container .select2-selection--single {
