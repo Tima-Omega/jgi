@@ -1230,6 +1230,9 @@ button {
     }
     &__inner {
         padding: 19px 24px;
+        &--pb {
+            padding-bottom: 70px;
+        }
     }
     &__title {
         font-weight: 600;
@@ -1246,6 +1249,9 @@ button {
         font-weight: 500;
         color: $bronze;
         margin-bottom: 16px;
+        &--mt {
+            margin-top: 24px;
+        }
     }
     &__status-img {
         margin-right: 10px;
@@ -1262,6 +1268,9 @@ button {
         min-height: 242px;
         display: flex;
         flex-direction: column;
+        &--min-height {
+            min-height: 214px;
+        }
     }
     &__step {
         font-size: 14px;

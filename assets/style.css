@@ -1748,6 +1748,10 @@ button {
   padding: 19px 24px;
 }
 
+.tasks__inner--pb {
+  padding-bottom: 70px;
+}
+
 .tasks__title {
   font-weight: 600;
   margin-bottom: 10px;
@@ -1769,6 +1773,10 @@ button {
   font-weight: 500;
   color: #CFA146;
   margin-bottom: 16px;
+}
+
+.tasks__status--mt {
+  margin-top: 24px;
 }
 
 .tasks__status-img {
@@ -1795,6 +1803,10 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.tasks__item--min-height {
+  min-height: 214px;
 }
 
 .tasks__step {
