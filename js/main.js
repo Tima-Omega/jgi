@@ -64,6 +64,19 @@ $(document).ready(function() {
             return false;
         }).filter(':first').click();
     });
+
+    $(function() {
+        var tab = $('.courses__wrap > div'); 
+        tab.hide().filter(':first').show(); 
+        
+        $('.courses__link').click(function(){
+            tab.hide(); 
+            tab.filter(this.hash).show(); 
+            $('.courses__link').removeClass('active');
+            $(this).addClass('active');
+            return false;
+        }).filter(':first').click();
+    });
     
     $( function() {
         $( ".friend-profile__activity-status" ).progressbar({

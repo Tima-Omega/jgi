@@ -95,6 +95,9 @@ button {
     &--store {
         margin-bottom: 140px;
     }
+    &--store-courses {
+        margin-bottom: 89px;
+    }
     &__inner {
         display: grid;
         grid-template-columns: 262px 1fr;
@@ -1448,6 +1451,79 @@ button {
         color: $red;
         border-top: 1px solid #BDBDBD;
         width: 100%;
+    }
+}
+
+.courses {
+    &__tab {
+        padding: 20px 24px 24px;
+    }
+    &__link {
+        text-decoration: none;
+        color: $grey;
+        margin-right: 24px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &.active {
+            color: $red;
+        }
+    }
+    &__inner {
+        padding: 0 20px;
+    }
+    &__item {
+        border-radius: 18px;
+        padding: 33px 35px;
+        display: inline-flex;
+        border: 1px solid #BDBDBD;
+    }
+    &__name {
+        font-weight: 600;
+        font-size: 18px;
+        color: $red;
+    }
+    &__box {
+        width: 24px;
+        height: 24px;
+        background: #EAEAEA;
+        margin-right: 12px;
+    }
+}
+
+.vip {
+    padding: 20px 24px 24px;
+    &__item {
+        display: inline-flex;
+        border: 1px solid #BDBDBD;
+        border-radius: 18px;
+        min-height: 246px;
+        flex-direction: column;
+        max-width: 288px;
+    }
+    &__box {
+        padding: 15px;
+        min-height: 198px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__btn {
+        padding: 12px 0 16px;
+        font-weight: 600;
+        font-size: 14px;
+        color: $red;
+        border-top: 1px solid #BDBDBD;
+        width: 100%;
+    }
+    &__name {
+        font-size: 18px;
+        font-weight: 700;
+        color: $bronze;
+        margin-bottom: 20px;
+    }
+    &__desc {
+        font-size: 14px;
+        margin-bottom: 14px;
     }
 }
 
