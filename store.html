@@ -25,7 +25,7 @@
             </div>
         </div>
     </header>
-    <div class="block block--tasks">
+    <div class="block block--store">
         <div class="container">
             <div class="block__inner">
                 <aside class="block__aside">
@@ -96,109 +96,67 @@
                     </div>
                 </aside>
                 <div class="block__content block__content--min-height">
-                    <div class="tasks">
-                        <div class="tasks__tab">
-                            <div class="tasks__nav">
-                                <a href="#tab-1" class="tasks__link">
-                                    <div class="tasks__link-img tasks__link-img--tasks"></div>
-                                    Список заданий</a>
-                                <a href="#tab-2" class="tasks__link">
-                                    <div class="tasks__link-img tasks__link-img--in-progress"></div>
-                                    Выполняются</a>
-                                <a href="#tab-3" class="tasks__link">
-                                    <div class="tasks__link-img tasks__link-img--check"></div>
-                                    Проверка</a>
+                    <div class="store">
+                        <div class="store__tab">
+                            <div class="store__nav">
+                                <a href="#tab-1" class="store__link">Игровые предметы</a>
+                                <a href="" class="store__link">Видео-курсы</a>
+                                <a href="" class="store__link">VIP</a>
                             </div>
                         </div>
-                        <div class="tasks__wrap">
-                            <div class="tasks__inner tasks__inner--pb" id="tab-1">
-                                <div class="tasks__title">Информация</div>
-                                <div class="tasks__subtitle">Учи Битрикс</div>
-                                <div class="tasks__status">
-                                    <img src="assets/img/in-progress-gold.svg" alt="" class="tasks__status-img">
-                                    В процессе выполнения
+                    </div>
+                    <div class="store__wrap">
+                        <div class="inventory" id="tab-1">
+                            <div class="inventory__item">
+                                <div class="inventory__box">
+                                    <img src="assets/img/aura.svg" alt="" class="inventory__img">
+                                    <div class="inventory__name">Аура</div>
+                                    <div class="inventory__desc">Повышает получение изумрудов с заданий на +10/15/20% на месяц
+                                    </div>
+                                    <img src="assets/img/diamond-gold.svg" alt="" class="inventory__icon">
                                 </div>
-                                <div class="tasks__cont">
-                                    <div class="tasks__item tasks__item--min-height">
-                                        <div class="tasks__name">Квалификация сотрудников</div>
-                                        <div class="tasks__text">От эффективности каждого сотрудника зависит успех вашего бизнеса</div>
-                                        <div class="tasks__reward">
-                                            <div class="tasks__reward-item">
-                                                <img src="assets/img/diamong.svg" alt="" class="tasks__reward-img">
-                                                <div class="tasks__reward-value">50</div>
-                                            </div>
-                                            <div class="tasks__reward-item">
-                                                <img src="assets/img/book.svg" alt="" class="tasks__reward-img">
-                                                <div class="tasks__reward-value">46</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tasks__item tasks__item--min-height">
-                                        <div class="tasks__name">Перенос бизнеса в интернет</div>
-                                        <div class="tasks__text">Интернет хороший помошник в сфере бизнеса в наше время. Это хорошее решения, которое поможет вам</div>
-                                        <div class="tasks__reward">
-                                            <div class="tasks__reward-item">
-                                                <img src="assets/img/diamong.svg" alt="" class="tasks__reward-img">
-                                                <div class="tasks__reward-value">50</div>
-                                            </div>
-                                            <div class="tasks__reward-item">
-                                                <img src="assets/img/book.svg" alt="" class="tasks__reward-img">
-                                                <div class="tasks__reward-value">46</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tasks__item tasks__item--min-height">
-                                        <div class="tasks__name">Совместный проект</div>
-                                        <div class="tasks__text">Сделать бизнес вместе с другом</div>
-                                        <div class="tasks__reward">
-                                            <div class="tasks__reward-item">
-                                                <img src="assets/img/diamong.svg" alt="" class="tasks__reward-img">
-                                                <div class="tasks__reward-value">50</div>
-                                            </div>
-                                            <div class="tasks__reward-item">
-                                                <img src="assets/img/book.svg" alt="" class="tasks__reward-img">
-                                                <div class="tasks__reward-value">46</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tasks__status tasks__status--mt">
-                                    <img src="assets/img/time.svg" alt="" class="tasks__status-img">
-                                    Проверяется
-                                </div>
-                                <div class="tasks__cont">
-                                    <div class="tasks__item  tasks__item--min-height">
-                                        <div class="tasks__name">Квалификация сотрудников</div>
-                                        <div class="tasks__text">От эффективности каждого сотрудника зависит успех вашего бизнеса</div>
-                                        <div class="tasks__reward">
-                                            <div class="tasks__reward-item">
-                                                <img src="assets/img/diamong.svg" alt="" class="tasks__reward-img">
-                                                <div class="tasks__reward-value">50</div>
-                                            </div>
-                                            <div class="tasks__reward-item">
-                                                <img src="assets/img/book.svg" alt="" class="tasks__reward-img">
-                                                <div class="tasks__reward-value">46</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tasks__item tasks__item--min-height">
-                                        <div class="tasks__name">Совместный проект</div>
-                                        <div class="tasks__text">Сделать бизнес вместе с другом</div>
-                                        <div class="tasks__reward">
-                                            <div class="tasks__reward-item">
-                                                <img src="assets/img/diamong.svg" alt="" class="tasks__reward-img">
-                                                <div class="tasks__reward-value">50</div>
-                                            </div>
-                                            <div class="tasks__reward-item">
-                                                <img src="assets/img/book.svg" alt="" class="tasks__reward-img">
-                                                <div class="tasks__reward-value">46</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <button class="inventory__btn">Купить</button>
                             </div>
-                            <div class="tasks__inner" id="tab-2">221qdwqwd1qwedfwe</div>
-                            <div class="tasks__inner" id="tab-3">wdqwdqwdqwdqwd</div>
+                            <div class="inventory__item">
+                                <div class="inventory__box">
+                                    <img src="assets/img/mana.svg" alt="" class="inventory__img">
+                                    <div class="inventory__name">Зелье активности</div>
+                                    <div class="inventory__desc">Повышает получение восстановление ативности на +10/15/20% на месяц
+                                    </div>
+                                    <img src="assets/img/diamond-gold.svg" alt="" class="inventory__icon">
+                                </div>
+                                <button class="inventory__btn">Купить</button>
+                            </div>
+                            <div class="inventory__item">
+                                <div class="inventory__box">
+                                    <img src="assets/img/folio.svg" alt="" class="inventory__img">
+                                    <div class="inventory__name">Фолиант мудрости</div>
+                                    <div class="inventory__desc">Повышает получение опыта с заданий на +10/15/20% на месяц
+                                    </div>
+                                    <img src="assets/img/diamond-gold.svg" alt="" class="inventory__icon">
+                                </div>
+                                <button class="inventory__btn">Купить</button>
+                            </div>
+                            <div class="inventory__item">
+                                <div class="inventory__box">
+                                    <img src="assets/img/talisman.svg" alt="" class="inventory__img">
+                                    <div class="inventory__name">Талисман</div>
+                                    <div class="inventory__desc">Моментально восстанавливает 20 очков активности
+                                    </div>
+                                    <img src="assets/img/diamond-gold.svg" alt="" class="inventory__icon">
+                                </div>
+                                <button class="inventory__btn">Купить</button>
+                            </div>
+                            <div class="inventory__item">
+                                <div class="inventory__box">
+                                    <img src="assets/img/stone.svg" alt="" class="inventory__img">
+                                    <div class="inventory__name">Покупка изумрудов</div>
+                                    <div class="inventory__desc">Покупка изумрудов за рубли.
+                                    </div>
+                                    <img src="assets/img/diamond-gold.svg" alt="" class="inventory__icon">
+                                </div>
+                                <button class="inventory__btn">Купить</button>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -92,6 +92,9 @@ button {
     &--tasks-info {
         margin-bottom: 77px;
     }
+    &--store {
+        margin-bottom: 140px;
+    }
     &__inner {
         display: grid;
         grid-template-columns: 262px 1fr;
@@ -282,7 +285,7 @@ button {
         &--initial {
             min-height: initial;
         }
-        &--tasks {
+        &--min-height {
             min-height: 688px;
         }
     }
@@ -1368,6 +1371,83 @@ button {
     }
     &__value {
         font-size: 12px;
+    }
+}
+
+.store {
+    &__tab {
+        background: #fff;
+        padding: 20px 20px 14px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    }
+    &__nav {
+        display: inline-flex;
+        padding: 3px;
+        background: #F7F7F7;
+        border: 1px solid #DDDDDD;
+        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.05);
+        border-radius: 16px;
+    }
+    &__link {
+        display: flex;
+        padding: 7px 0;
+        font-weight: 500;
+        font-size: 15px;
+        color: $grey;
+        text-decoration: none;
+        align-items: center;
+        min-width: 197px;
+        justify-content: center;
+        &.active {
+            background: #FFFFFF;
+            border-radius: 12px;
+            color: $red;
+            flex-shrink: 0;
+        }
+    }
+}
+
+.inventory {
+    padding: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px 24px;
+    &__item {
+        border: 1px solid #BDBDBD;
+        border-radius: 18px;
+        min-height: 246px;
+    }
+    &__box {
+        padding: 15px;
+        min-height: 198px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__img {
+        margin-bottom: 8px;
+        width: 28px;
+        height: 28px;
+    }
+    &__name {
+        font-weight: 700;
+        color: $red;
+        margin-bottom: 12px;
+    }
+    &__desc {
+        font-size: 14px;
+    }
+    &__icon {
+        margin-top: auto;
+        width: 22px;
+        height: 22px;
+    }
+    &__btn {
+        padding: 12px 0 16px;
+        font-weight: 600;
+        font-size: 14px;
+        color: $red;
+        border-top: 1px solid #BDBDBD;
+        width: 100%;
     }
 }
 

@@ -97,6 +97,10 @@ button {
   margin-bottom: 77px;
 }
 
+.block--store {
+  margin-bottom: 140px;
+}
+
 .block__inner {
   display: -ms-grid;
   display: grid;
@@ -371,7 +375,7 @@ button {
   min-height: initial;
 }
 
-.block__content--tasks {
+.block__content--min-height {
   min-height: 688px;
 }
 
@@ -1951,6 +1955,109 @@ button {
 
 .task__value {
   font-size: 12px;
+}
+
+.store__tab {
+  background: #fff;
+  padding: 20px 20px 14px;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.store__nav {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 3px;
+  background: #F7F7F7;
+  border: 1px solid #DDDDDD;
+  -webkit-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+}
+
+.store__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 7px 0;
+  font-weight: 500;
+  font-size: 15px;
+  color: #9E9E9E;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 197px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.store__link.active {
+  background: #FFFFFF;
+  border-radius: 12px;
+  color: #9B1A48;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.inventory {
+  padding: 24px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 24px 24px;
+}
+
+.inventory__item {
+  border: 1px solid #BDBDBD;
+  border-radius: 18px;
+  min-height: 246px;
+}
+
+.inventory__box {
+  padding: 15px;
+  min-height: 198px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.inventory__img {
+  margin-bottom: 8px;
+  width: 28px;
+  height: 28px;
+}
+
+.inventory__name {
+  font-weight: 700;
+  color: #9B1A48;
+  margin-bottom: 12px;
+}
+
+.inventory__desc {
+  font-size: 14px;
+}
+
+.inventory__icon {
+  margin-top: auto;
+  width: 22px;
+  height: 22px;
+}
+
+.inventory__btn {
+  padding: 12px 0 16px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #9B1A48;
+  border-top: 1px solid #BDBDBD;
+  width: 100%;
 }
 
 .select2-container .select2-selection--single {
