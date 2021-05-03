@@ -2,18 +2,32 @@ $(document).ready(function() {
     $(".profile__select").select2({
         minimumResultsForSearch: Infinity,
         placeholder: {
-            id: 'Выберите город...', // the value of the option
+            id: 'Выберите город...',
             text: 'Выберите город...'
-        }
+        },
+        dropdownCssClass: "profile__select-dropdown",
     });
     $(".profile__select--sphere").select2({
         minimumResultsForSearch: Infinity,
+        dropdownCssClass: "profile__select-dropdown",
     });
+    $(".modal-prem__selection").select2({
+        minimumResultsForSearch: Infinity,
+        dropdownCssClass: "modal-prem__select-dropdown",
+    });
+		$(".modal-store__selection").select2({
+			minimumResultsForSearch: Infinity,
+			dropdownCssClass: "modal-store__select-dropdown",
+			placeholder: {
+				id: 'size', 
+				text: 'Выберите размер'
+		},
+	});
     (function () {
 
-        const cropElement = document.querySelectorAll('.chat__text'), // выбор элементов 
-              size = 32                                             // кол-во символов 
-              endCharacter = '...';                                  // окончание 
+        const cropElement = document.querySelectorAll('.chat__text'),
+              size = 32,                                             
+              endCharacter = '...';
     
         cropElement.forEach(el => {
             let text = el.innerHTML;
@@ -77,6 +91,19 @@ $(document).ready(function() {
             return false;
         }).filter(':first').click();
     });
+
+    $(function() {
+        var tab = $('.modal__wrap > div'); 
+        tab.hide().filter(':first').show(); 
+        
+        $('.modal__link').click(function(){
+            tab.hide(); 
+            tab.filter(this.hash).show(); 
+            $('.modal__link').removeClass('active');
+            $(this).addClass('active');
+            return false;
+        }).filter(':first').click();
+    });
     
     $( function() {
         $( ".friend-profile__activity-status" ).progressbar({
@@ -85,12 +112,36 @@ $(document).ready(function() {
     } );
 
     $(".search__btn").click(function(){
-        $(".search__filters").slideToggle()
-        $(".search__btn-img").toggleClass('active')
-    })
+        $(".search__filters").slideToggle();
+        $(".search__btn-img").toggleClass('active');
+    });
 
     $(".mask-birth").mask("99 / 99 / 9999").datepicker();
     $(".mask-phone").mask("+9 (999) 999-99-99");
+    $(".modal-prem__input--number").mask("9999 9999 9999 9999");
+    $(".modal-prem__input--date").mask("99 / 99");
+    $(".modal-prem__input--cvc").mask("999");
+});
+
+$('.overlay').click(function () {
+    $(this).fadeOut();
+    $('.modal').fadeOut();
+});
+$('.button').click(function() {
+    $('.overlay').fadeIn();
+    $('.modal').fadeIn();
+});
+$('.modal__close').click(function () {
+    $(this).closest('.modal').fadeOut();
+    $('.overlay').fadeOut();
+});
+
+$(document).keydown(function(e) {
+    if (e.keyCode === 27) {
+        e.stopPropagation();
+        $('.modal').fadeOut();
+        $('.overlay').fadeOut();
+    }
 });
 
 

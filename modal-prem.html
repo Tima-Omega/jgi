@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Istok+Web:wght@700&family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.css">
+	<link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/sunny/jquery-ui.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="assets/normalize.css">
+	<link rel="stylesheet" href="assets/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <a class="button">Кнопка</a>
+    <div class="modal modal-prem">
+			<button class="modal__close"></button>
+			<div class="modal__title modal__title--prem">Оплата премиум аккаунта</div>
+			<div class="modal-prem__select">
+					<div class="modal-prem__select-name">Выберите кол-во месяцев</div>
+					<div class="modal-prem__wrap">
+							<select class="modal-prem__selection">
+									<option value="">1</option>
+									<option value="">6</option>
+									<option value="">12</option>
+							</select>
+					</div>
+			</div>
+			<div class="modal-prem__row">
+					<div class="modal-prem__row-item">Итого к оплате:</div>
+					<div class="modal-prem__row-item">2 456 ₽</div>
+			</div>
+			<div class="modal-prem__card">
+					<div class="modal-prem__card-row">
+							<input type="text" placeholder="Номер карты" class="modal-prem__input modal-prem__input--big modal-prem__input--number">
+							<input type="text" placeholder="ММ / ГГ" class="modal-prem__input modal-prem__input--date">
+					</div>
+					<div class="modal-prem__card-row">
+							<input type="text" placeholder="Имя владельца" class="modal-prem__input modal-prem__input--big">
+							<input type="text" placeholder="CVC" class="modal-prem__input modal-prem__input--cvc">
+					</div>
+			</div>
+			<button class="profile__cards-btn modal-prem__btn">Продолжить</button>
+			<div class="modal-prem__box">
+					<img src="assets/img/visa-grey.svg" alt="" class="modal-prem__img">
+					<img src="assets/img/visa-grey.svg" alt="" class="modal-prem__img">
+					<img src="assets/img/visa-grey.svg" alt="" class="modal-prem__img">
+					<img src="assets/img/visa-grey.svg" alt="" class="modal-prem__img">
+					<img src="assets/img/visa-grey.svg" alt="" class="modal-prem__img">
+			</div>
+	</div>
+
+    <div class="overlay"></div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js"></script>
+<script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+</html>
